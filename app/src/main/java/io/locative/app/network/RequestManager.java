@@ -78,7 +78,7 @@ public class RequestManager {
         }
         // GET
         return url.concat(
-                "?latitude=" + URLEncoder.encode(Float.toString(geofence.latitude))
+                "&latitude=" + URLEncoder.encode(Float.toString(geofence.latitude))
                 + "&longitude=" + URLEncoder.encode(Float.toString(geofence.longitude))
                 + "&id=" + URLEncoder.encode(geofence.subtitle)
                 + "&device=" + URLEncoder.encode(Settings.Secure.getString(mContext.getContentResolver(),
